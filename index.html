@@ -1,29 +1,136 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-  <head>
-    <!-- Set the page title -->
-    <title>Assignment 02</title>
+<head> 
+   <!--This section creates the title of the HTML document and links it the CSS file -->
+    <meta charset = "utf-8">
+    <title> Pepper Pete's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+<body>  <!--This section outlines the header logo, title and header list -->
+   <header> <div class="head"> 
+      <img width="80" src="logo_v3.png" alt="header logo">
+      <h1 style="color:aliceblue; background-color: #E0643C; margin-right: auto"> PEPPER PETE'S</h1> 
+   
+   <!--these are the menu options -->
+   <ul class="nav-list"> 
+      <li> <a href="Home.html"> Home </a></li>
+      <li> <a href="Menu.html"> Our Menu </a></li>
+      <li> <a href="About_Us.html"> About Us </a></li>
+      <li> <a href="Location.html"> Locations </a></li>
+      <li> <a href="Events.html"> Events </a></li>
+      <li> <a href="Nutrition.html"> Nutrition </a></li>
+   </ul>
+</div> </header>
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Displays the image and text for the hero section, in this case it's our new stir fry -->
+<div class = stir>  
+   <img width = "600" src="stir_fry.jpg" alt="stir fry image">
+   <h2> Try Our New <br> Frightening <br> Ghost Pepper <br> Chicken Stir Fry</h2>
+</div>
+
+<!-- Displays the text for the 'Where Heat is Your Treat' quote -->
+<div class = treat> 
+   <h2> "Where Heat Is Your Treat" <br>-Guy Fieri </h2>
+</div>
     
-    <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--This class the 'Our Menu' section, include the titles, image, and button -->
+ <div class = menu> 
+   <h2>Our Menu</h2>
+   <img class = "our_menu" width = "500" src="blurred_menu.png" alt="image of woman holding menu">
+   <h3> Learn More About The Food <br> We Serve:</h3>
+   <button type="button"> View Full Menu </button>
+   <div class = food> <img width = 600 src="circles_all.png" alt="images of food in circles"> </div> 
+</div>
+ 
+<!--This class the About Us section, include the titles, image, paragraph and button -->
+<div class = about> 
+     <h1>About Us</h1>
+     <h2>Tale As Old As Time:</h2>
+     <img width = "500" src="about_us_blurred.png" alt = "image of about us">
+     <p> Bacon ipsum dolor amet frankfurter porchetta kielbasa <br>
+        turkey jowl prosciutto boudin short loin burgdoggen sausage <br>
+        shank drumstick. Chuck strip steak leberkas pastrami beef <br>
+        ribs burgdoggen landjaeger short loin ham frankfurter brisket. <br>
+        Tenderloin swine t-bone, meatloaf hamburger chicken pork alcatra <br>
+        ball tip prosciutto. Bacon venison cupimp beef ribs.</p>
+      <button type="button">Learn More</button>
+</div>
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="reset.css" />
+ <!--This class the Nutrition & Allergies section, include the titles, image, paragraph and button -->
+<div class = nut> 
+     <h1> Nutrition <br> & Allergies</h1>
+     <img width = "500" src="blurred_nutriton.png" alt = "image of food symbolizing nutrition">
+     <h2> We Prioritize Health</h2>
+     <p> Bacon ipsum dolor amet frankfurter porchetta kielbasa <br>
+        turkey jowl prosciutto boudin short loin burgdoggen sausage <br>
+        shank drumstick. Chuck strip steak leberkas pastrami beef <br>
+        ribs burgdoggen landjaeger short loin ham frankfurter brisket. <br>
+        Tenderloin swine t-bone, meatloaf hamburger chicken pork alcatra <br>
+        ball tip prosciutto. Bacon venison cupimp beef ribs.</p>
 
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--
+        <button type="button"> More Info</button>   
+</div>
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+ <!--This class outlines the text that describes this weeks challenge -->
+<div class= challenge>
+   <h1> Upcoming Event: <br> Hot Wing Wednesday <br> This Week: <br> 
+   10 Hot Wings With Suicide Sauce </h1>
+</div>
 
-    -->
-  </body>
+ <!--This class outlines the image of the food from this weeks challenge as well as the heading and paragraph -->
+<div class= wings>
+   <img width = "500" src="sauce_and_wings.png" alt="image of sauce and wings"> 
+   <h2> Cash Prize: $200</h2>
+   <p> Bacon ipsum dolor amet frankfurter porchetta kielbasa <br>
+      turkey jowl prosciutto boudin short loin burgdoggen sausage <br>
+      shank drumstick. Chuck strip steak leberkas pastrami beef <br>
+      ribs burgdoggen landjaeger short loin ham frankfurter brisket. <br>
+      Tenderloin swine t-bone, meatloaf hamburger chicken pork alcatra <br>
+      ball tip prosciutto. Bacon venison cupimp beef ribs.</p>
+
+</div>
+
+ <!--This class outlines the map image as well as the resturant's hours and address-->
+<div class = map> 
+   <img width = "450" src="map_3.png" alt="image of restaurant on map"> 
+   <h1> Open Monday-Friday <br> 12am-8pm <br> 1245 Spice Rd. N, <br> Maple Leaf, <br> Ontario </h1>
+   <button type="button"> Find Other Locations</button>
+</div>
+
+ <!--This class outlines the text that reads 'Subscribe to Our Newsletter -->
+<div class = subscribe> 
+<h1> Subscribe To Our NewsLetter: </h1>
+</div>
+
+ <!--This form allows the user to input their name, and their email, 
+   there is also a submit button and a reset button -->
+<div class = newsletter> 
+<form>
+   <label for="Name"> Name: </label> 
+   
+   <input type="text" id="Name" name="your name" autocomplete = "name" placeholder="Your Name..."> <br> <br>
+   <label for="Email"> Email: </label> 
+   
+   <input type = "text" id="Email" name="email" autocomplete = "email" placeholder="Your Email...">
+   <button type="button">Sign Up</button>
+</form>
+</div>
+
+     <div class = foot> 
+     <img width="100" src="logo_v3.png" alt="footer logo">
+     
+     <h1 style="color:aliceblue"> PEPPER PETE'S</h1>
+     <p style="color:aliceblue"> © 2023 Pepper Pete's </p>
+   
+     <ul class = foot-list> 
+        <li> <a href="Home.html"> Home </a></li>
+        <li> <a href="Menu.html"> Our Menu </a></li>
+        <li> <a href="About_Us.html"> About Us </a></li>
+        <li> <a href="Location.html"> Locations </a></li>
+        <li> <a href="Events.html"> Events </a></li>
+        <li> <a href="Nutrition.html"> Nutrition </a></li>
+     </ul>
+   </div>
+
 </html>
