@@ -1,3 +1,500 @@
 /*
   CSS File
 */
+
+/* Changes the background colour */
+body { 
+    background-color: #360504
+}
+
+/* Changes letter spacing and font size of the header */
+header { 
+    letter-spacing: 100 px;
+    font-size: 25px;
+}
+
+/* Establishs properites of the hotbar list */
+ul { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    list-style: none; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    font-size: 20px;
+    border-spacing: 10px;
+}
+
+/* Establsihs more specific properites hotbar list */
+.nav-list li a { 
+color: white; 
+font-weight: 500; 
+font-family: 'Houschka Rounded';
+text-decoration: none;
+flex-direction: flex-end;
+}
+
+/* Makes it so the hotbar items have an underline when the mouse hovers */
+.nav-list li a:hover { 
+text-decoration: underline;
+}
+
+/* Applies margins, alignments and graphics to the header*/ 
+.head {  
+    width: 400 px;
+    margin: -10px; 
+    padding: 15px; 
+    align-items: center; 
+    gap: 25px; 
+    background-color: #E0643C; 
+    border-radius: 0px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+/* Applies flexboxes, text and image alignemnts, to the hero section*/
+.stir {  
+    display: flex;
+   /* This allows the flexbox background to be a gradioent */
+   background-image: linear-gradient(#F2C8B9,#bb755b); 
+    font-family: 'Garamond'; 
+    margin: -10px; 
+    font-size: 35px; 
+    color: #360504;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500px;
+    gap: 90px; 
+}
+
+/* Applies the background and text settings to the 'heat is your treat' section */
+.treat { 
+
+   /* <img width = "500" src="blurred background.png"> */
+    display: flex;
+    margin: 30px; 
+    margin-left: -10px; 
+    margin-right: -10px; 
+    background-image: url(blurred\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 1600px;
+    align-items: center;
+    font-size: 30px;
+    
+    color: #F0C5B5; 
+    outline: #360504;
+    font-family: 'Gastromond';
+    text-align: center;
+    justify-content: center;
+    text-shadow: 4px 4px #220505;
+}
+
+/* Applies the flex settings for the menu sections */ 
+.menu { 
+background-image: linear-gradient(#F2C8B9,#bb755b);  
+margin-left: -8px; 
+margin-right: -8px; 
+font-family: 'Garamond';
+text-align: center;
+align-items: center;
+display: flex;
+}
+
+/* Applies format settings to the pictures of food */ 
+.food {
+    position: absolute; 
+    margin-left: 630px;
+    margin-bottom: -40px;
+    display: flex; 
+   justify-content: center;
+}
+
+/* Applies a margin to the menu image */
+.menu img { 
+    margin-left: 200px; 
+}
+
+/* Applies margins and text features to 'Our Menu*/
+.menu h2 { 
+position: absolute;
+margin-top: -85px; 
+margin-left: 280px; 
+text-shadow: 4px 4px #220505;
+font-size: 60px; 
+color: aliceblue;
+}
+
+/* Applies margins and text features to 'Learn More About The Food We Serve */
+.menu h3 { 
+color: #220505;
+font-size: 35px;
+font-weight: 1000;
+margin-top: -160px;
+margin-left: 200px; 
+}
+
+/* Applies padding, marigins and colour to View Full Menu button */ 
+.menu button { 
+    position: absolute;
+    margin-left: 1020px; 
+    margin-top: 250px; 
+    border: none; 
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 25px; 
+    font-family: 'Houschka Rounded';
+    background-image:linear-gradient(#ec7047,#b73c14);
+    color:aliceblue; 
+}
+ 
+/* cxhanges the button's colour: when the mouse hoovers over it */ 
+.menu button:hover { 
+    background-image:linear-gradient(#bc5533,#922d0c);
+}
+
+/* Apples margins, backgrounds, and font settings to the 'about us' flexbox */ 
+.about {
+    background-image: linear-gradient(#F2C8B9,#bb755b);  
+    margin-top: 30px;
+    margin-left: -8px; 
+    margin-right: -8px; 
+    font-family: 'Garamond';
+    text-align: center;
+    align-items: center;
+    display: flex;
+    }
+    
+/* Apples margins,  to the 'about us' image */ 
+.about img {
+        margin-left: 200px; 
+    }
+    
+/* Apples margins, shadow and other font option to the about us heading */ 
+.about h1 {
+    position: absolute;
+    margin-top: 5px; 
+    margin-left: 280px; 
+    text-shadow: 4px 4px #220505; /* add code for outline */ 
+    font-size: 60px; 
+    color: aliceblue;
+    display: flex; 
+    }
+
+/* Apples margins, shadow and other font option to the about us heading */ 
+.about h2 {
+    position: absolute; 
+    color: #220505;
+    font-size: 35px;
+    font-weight: 1000;
+    margin-top: -160px;
+    margin-left: 970px; 
+    }
+
+/* Applies margins, font weight and alignments to the paragraph text in the 'About Us' section */
+.about p {
+        margin-left: 200px; 
+        margin-top: 30px; 
+        font-weight: 1000;  
+        text-align: center;
+    }
+
+/* Applies margins, colours and border settings to the button in the 'About Us' section */
+.about button {
+        position: absolute;
+        margin-left: 1040px; 
+        margin-top: 220px; 
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 30px;
+        font-size: 25px; 
+        font-family: 'Houschka Rounded';
+        background-image:linear-gradient(#ec7047,#b73c14);
+        color:aliceblue; 
+    }
+
+/* cxhanges the button's colour: when the mouse hoovers over it */ 
+.about button:hover { 
+    background-image:linear-gradient(#bc5533,#922d0c);
+}
+
+/* Creates a flexbox for the nutrition and allergies section */ 
+.nut {
+    margin-top: 30px;
+    margin-left: -8px; 
+    margin-right: -8px; 
+    background-image: linear-gradient(#F2C8B9,#bb755b); 
+    display: flex; 
+}
+
+/* Applies a margin to the 'Nutrition and Allergies' Image */
+.nut img {
+margin-left: 830px; 
+}
+
+/* Positions and formats the text properly for the 'Nutrition and Allergies' heading of the section of the same name */
+.nut h1 {
+    position: absolute;
+    margin-left: 940px; 
+    text-align: center;
+    text-shadow: 4px 4px #220505; /* add code for outline */ 
+    font-size: 60px; 
+    color: aliceblue;
+    }
+
+/* Positions and formats the text properly for the 'We Proitoixe Health' heading in the Nutrition and Allergies section */
+.nut h2 {
+position: absolute; 
+margin-left: 300px; 
+position: absolute; 
+color: #220505;
+font-size: 35px;
+font-weight: 900;
+}
+
+/* Uses margins to position the paragtpah in the 'Nutrition and Allergies' section */
+.nut p{
+    position: absolute; 
+    margin-left: 220px; 
+    margin-top: 100px; 
+    text-align: center;
+    font-weight: 1000; 
+}
+
+/* Adds graphic and position proeprties for the button in the 'Nutrition and Allergies' section */
+.nut button {
+    position: absolute; 
+    margin-left: 370px; 
+    margin-top: 250px; 
+    border: none; 
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 25px; 
+    font-family: 'Houschka Rounded';
+    background-image:linear-gradient(#ec7047,#b73c14);
+    color:aliceblue; 
+}
+
+/* cxhanges the button's colour: when the mouse hoovers over it */ 
+.nut button:hover { 
+    background-image:linear-gradient(#bc5533,#922d0c);
+}
+
+/* Creates a flexbox for the 'Upcoming Event' section and gives it necessary properties */
+.challenge {
+     display: flex;
+     margin-top: 30px;
+     margin-left: -8px; 
+     margin-right: -8px; 
+     background-image: url(blurred\ background.png);
+     background-repeat: no-repeat;
+
+     background-size: 1600px;
+     align-items: center;
+     font-size: 20px;
+     
+     color: #F0C5B5; 
+     font-family: 'Gastromond';
+     
+     text-align: center;
+     justify-content: center;
+     text-shadow: 4px 4px #220505;
+ }
+
+ /* Gives a flexbox for the challenge section, in this case the wings */
+.wings {
+    background-image: linear-gradient(#F2C8B9,#a5634b); 
+    margin-left: -100px; 
+    margin-top: 30px; 
+    display: flex;
+    justify-content:space-around;
+}
+
+/* Gives the wing and sauce image a margin */
+.wings img {
+  margin-left: 200px; 
+}
+
+/* Adds, colour, size margins and more to the 'Cash Prize $200' heading in the challenge section */
+.wings h2 {
+    position: absolute; 
+    margin-top: 50px; 
+    margin-left: 700px;
+    color: #220505;
+    font-size: 35px;
+    font-weight: 900;
+    }
+  
+/* Gives margins, and text styles to the bacon ipsum paragraph in the challenge section */
+.wings p {
+    margin-left: -350px;
+    margin-top: 130px; 
+        text-align: center;
+        font-weight: 1000; 
+    }
+
+/* Creates the flexbox for the map section, give it margins and a graident background */
+.map {
+    display: flex;
+     margin-left: -10px; 
+    margin-top: 30px; 
+    background-image: linear-gradient(#F2C8B9,#bb755b); 
+}
+/* Gives the image of the map a margin */
+.map img {
+    margin-left: 870px; 
+}
+
+/* Positions and styles the heading that display the hours and the address */
+.map h1 {
+    position: absolute; 
+    margin-left: 300px; 
+    text-align: center;
+    color: #220505;
+    font-size: 35px;
+    font-weight: 900;
+    }
+
+/* Gives margins, positions, colour, padding and more to the button for the map section */
+.map button {
+    position: absolute; 
+    margin-left: 320px; 
+    margin-top: 250px; 
+    border: none; 
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-family: 'Houschka Rounded'; 
+    font-size: 25px; 
+    background-image:linear-gradient(#ec7047,#b73c14);
+    color:aliceblue; 
+    }
+
+/* cxhanges the button's colour: when the mouse hoovers over it */ 
+.map button:hover { 
+    background-image:linear-gradient(#bc5533,#922d0c);
+}
+
+/* Gives the 'subscribe to our newsletter' section a flexbox, padding, margins and more */
+.subscribe {
+    display: flex;
+    margin-top: 50px;
+    margin-left: -8px; 
+    margin-right: -8px; 
+    background-image: url(blurred\ background.png);
+    background-repeat: no-repeat;
+    padding: 30px; 
+    background-size: 1600px;
+    align-items: center;
+    font-size: 20px;
+         
+    color: #F0C5B5; 
+    outline: #360504;
+    font-family: 'Gastromond';
+         
+    font-weight: normal; 
+    text-align: center;
+    justify-content: center;
+    text-shadow: 4px 4px #220505;
+}
+
+/* Creates a flexbox for newsletter signup */
+.newsletter {
+    display: flex;
+    margin-left: -10px; 
+    margin-top: 30px; 
+    background-image: linear-gradient(#F2C8B9,#bb755b); 
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Creates display properties for 'Name' and 'Email' Text */
+.newsletter label {
+    display: flex;  
+    font-size: 40px; 
+    font-weight: 1000;
+}
+
+/* Has placeholder text for labels appear in white  */
+.newsletter ::placeholder {
+    color: aliceblue;
+}
+
+/* Display properties for the textbox for the label  */
+.newsletter input {
+    align-content: center;
+    display: flex;  
+    font-family: 'Houschka Rounded'; 
+    font-size: 30px; 
+    
+    border: 5px, black;  
+    border-radius: 20px;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 25px; 
+    font-family: 'Houschka Rounded';
+    background-image:linear-gradient(#f8a552, #ad6a27);
+    color:aliceblue; 
+}
+
+/* Display properties for the 'Sign Up' button */
+.newsletter button { 
+   margin-top: 30px;
+   margin-left: 100px; 
+    border: none; 
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-family: 'Houschka Rounded'; 
+    font-size: 25px; 
+    background-image:linear-gradient(#ec7047,#b73c14);
+    color:aliceblue; 
+}
+
+/* cxhanges the button's colour: when the mouse hoovers over it */
+.newsletter button:hover {
+    background-image:linear-gradient(#bc5533,#922d0c);
+}
+
+
+/* Creates a flexbox for the footer, adds necessary margins, padding and alignments */
+.foot {
+    display: flex; 
+    width: 400 px;
+    margin: -10px;
+    margin-top: 40px;  
+    padding: 10px; 
+    align-items: center; 
+    background-color: #E0643C; 
+    justify-content: space-evenly;
+   
+}
+/* Margins the logo to the left of the footer */
+.foot img {
+    margin-left: -180px;
+}
+
+/* Margins 'Pepper Pete's on the footer to the left*/
+.foot h1 {
+    margin-left: -150px; 
+}
+
+/* Margins ©2023 Pepper Pete's to the middle-left of the footer */
+.foot p {
+    margin-left: -150px; 
+}
+
+/* Establsihes properties of the footer's list */
+.foot-list li a {
+    
+    color: white; 
+    font-weight: 1000; 
+    font-family: 'Houschka Rounded';
+    text-decoration: none;
+    flex-direction: flex-end;
+    
+    }
+/* Gives the footer list an underline, when the mouse hovers over it*/
+.foot-list li a:hover {
+    text-decoration: underline;
+    }
